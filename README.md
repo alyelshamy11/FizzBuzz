@@ -43,7 +43,7 @@ The markdown format is commonly used for things like readme files, as they allow
 which allows for basic typesetting when viewed while still being a plaintext format.
 
 Below is a blank checkbox:
-- [ ] Put an X in the [ ] to mark this as done!
+- [X] Put an X in the [ ] to mark this as done!
 
 You can edit this file directly to check off these checkboxes throughout the lab to mark things as done.
 Do so now for the checkbox above.
@@ -87,9 +87,9 @@ Let's explore a solution written in Java.
 class FizzBuzz {
 
     public static void main(String[] args) {
-
-        for (int i = 1; i < 100; i++) {
-
+        int i = 0;
+        while (i < 100) {
+             i++;
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
             boolean divisibleBy5 = i % 5 == 0;
@@ -117,7 +117,7 @@ class FizzBuzz {
 }
 ```
 
-- [ ] Open `FizzBuzz.java` in the `src` directory and click the run button in the top left corner.
+- [X] Open `FizzBuzz.java` in the `src` directory and click the run button in the top left corner.
 
 If you don't see this button, you may need to mark `src` as the `Sources Root` for the project. You can do this
 by right-clicking the `src` directory in the `Project` tab and near the bottom of the context menu
@@ -135,7 +135,7 @@ the code are doing. For example, what's the Java version of Python's `and`? What
 on with that weird `for` loop? As you do this, you might find it useful to write down your
 own implementation in Python to help you begin to create a mapping between the two languages.
 
-- [ ] Make note of any specific Java syntax which stands out to you and compare what you
+- [X] Make note of any specific Java syntax which stands out to you and compare what you
 come up with those around you. Try to come up with a list of at least five things that
 strike you as either similar to or different from Python.
 
@@ -179,7 +179,7 @@ line or the closing brace `}` of the loop.
 
 3. Immediately, type the method name you want, maybe something like `doFizzBuzz`.
 
-- [ ] Rerun the program to verify.
+- [X] Rerun the program to verify.
 
 That's your first big IntelliJ trick! There are lots more.
 
@@ -409,3 +409,4 @@ the other one of you will need to do a `git pull` to get the changes. Of course,
 and try to push, there may be conflicting changes which need to be resolved. As mentioned earlier,
 git does a pretty good job telling you what is wrong and can help you resolve any conflicts. We'll talk more about
 this later, as well as other features of git which can help you avoid conflicts.
+# https-markus.teach.cs.toronto.edu-git-2023-09-csc207-elshamy2
