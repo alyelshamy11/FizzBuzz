@@ -1,24 +1,24 @@
 public class Multiples {
-    public static void main(String[] args) {
+    public static int main(Integer n, Integer a, Integer b) {
         int i = 0;
         int result = 0;
-        while (i < 1000) {
+        while (i < n) {
             i++;
             // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+            boolean divisibleBya = i % a == 0;
+            boolean divisibleByb = i % b == 0;
 
             // Print our appropriate result.
-            if (divisibleBy3 && divisibleBy5) {
+            if (divisibleBya && divisibleByb) {
                 result++;
 
-            } else if (divisibleBy3) {
+            } else if (divisibleBya) {
                 result++;
 
-            } else if (divisibleBy5) {
+            } else if (divisibleByb) {
                 result++;
             }
         }
-        System.out.println(result);
+        return result;
     }
 }
